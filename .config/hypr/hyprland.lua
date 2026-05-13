@@ -21,6 +21,9 @@ hl.monitor({
 	scale = "1.33",
 })
 
+-- Rofi
+hl.exec_cmd("hyprctl keyword layerrule blur, rofi")
+hl.exec_cmd("hyprctl keyword layerrule ignorezero, rofi")
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
