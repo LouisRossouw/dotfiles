@@ -1,7 +1,20 @@
+-------------------
+---- AUTOSTART -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
+-------------------
+
+local autostart_apps = {
+	"hyprpolkitagent",
+	"waybar",
+	"dunst",
+}
+
 local function run_once(cmd)
-	hl.exec_cmd("pkill " .. cmd .. "; " .. cmd .. " &")
+	hl.exec_cmd("sleep 1; pkill " .. cmd .. " || true; " .. cmd .. " &")
 end
 
-run_once("hyprpolkitagent")
-run_once("waybar")
-run_once("dunst")
+-- Ensure compositor is ready
+hl.on("hyprland.start", function()
+	for i, app in ipairs(autostart_apps) do
+		run_once(app)
+	end
+end)
