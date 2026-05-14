@@ -4,6 +4,7 @@
 
 local autostart_apps = {
 	"hyprpolkitagent",
+	"hyprpaper",
 	"waybar",
 	"dunst",
 }
