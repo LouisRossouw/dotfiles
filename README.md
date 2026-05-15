@@ -6,10 +6,10 @@
 - Arch Linux (or Arch-based distro)
 - Hyprland (Lua version)
 - Waybar (optional)
-- Rofi
-- Dunst
-- Kitty
 - Dolphin
+- Kitty
+- Dunst
+- Rofi
 
 
 
