@@ -28,3 +28,5 @@ sudo pacman -S rofi dunst kitty dolphin waybar
 ln -s ~/YOUR_REPO/hypr ~/.config/hypr
 ln -s ~/YOUR_REPO/rofi ~/.config/rofi
 ln -s ~/YOUR_REPO/dunst ~/.config/dunst
+
+Hopefully it works 🤞
