@@ -1,6 +1,4 @@
--------------------
----- AUTOSTART -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
--------------------
+-- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 
 local autostart_apps = {
 	"hyprpolkitagent",
