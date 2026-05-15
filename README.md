@@ -1,0 +1,1 @@
+My casual Hyprland doties yo - also how do i Lua
