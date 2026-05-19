@@ -1,0 +1,51 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": ["hyprland/workspaces","mpris"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "network",
+    "battery"
+  ],
+
+  "clock": {
+    "format": "{:%H:%M}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  muted"
+  },
+
+"network": {
+  "format-wifi": "  {signalStrength}%",
+  "format-ethernet": "󰈀  wired",
+  "format-disconnected": "⚠  offline"
+},
+
+  "mpris": {
+    "format": "{title}",
+    "max-length": 30
+  },
+ 
+  "battery": {
+    "format": "{capacity}%",
+    "format-charging": " {capacity}%",
+  "states": {
+    "warning": 30,
+    "critical": 15
+  }
+ }
+}

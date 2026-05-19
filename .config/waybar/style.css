@@ -1,0 +1,76 @@
+/* Global */
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+}
+
+/* The bar itself */
+window#waybar {
+  background: rgba(20, 20, 20, 0.35);
+  border-radius: 8px;
+  margin: 6px;
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
+}
+
+#workspaces button {
+  padding: 0 10px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  background: transparent;
+  color: #aaa;
+}
+
+#workspaces button.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#battery,
+#mpris {
+  padding: 0 10px;
+  margin: 4px 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#mpris {
+  background: rgba(0, 120, 255, 0.1);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#pulseaudio {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#pulseaudio.muted {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ff5555;
+}
+
+#network,
+#battery {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#battery.warning {
+  background: rgba(255, 200, 0, 0.2);
+}
+
+#battery.critical {
+  background: rgba(255, 0, 0, 0.25);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 0 8px;
+}
